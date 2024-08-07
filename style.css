@@ -1,0 +1,225 @@
+@font-face {
+    font-family:nexa ;
+    src: url("Nexa-Heavy.ttf");
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding:0px;
+}
+body{
+    
+background: linear-gradient(117deg, rgb(229, 63, 13) 0%, rgb(248, 227, 0) 100%,rgb(249, 245, 7) 100%);
+animation: gradient-animation 18s ease infinite;
+}
+@keyframes gradient-animation {
+    0%{
+        background-position:0% 50%
+
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+    
+}
+
+.header1{
+    font-family: nexa;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color: rgb(255, 253, 253);
+    border: black 5px solid;
+    margin-bottom: 15px;
+    border-radius: 50px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 200px 200px;
+    gap: 30px;
+   
+}
+.col1{
+    background-color: rgb(145, 79, 30);
+    font-family: nexa;
+    font-size: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    color: rgb(255, 255, 255);
+    border: black solid 5px;
+    border-radius: 30px;
+}
+.col2{
+   background-color: rgb(222, 172, 128);
+   font-family: nexa;
+   font-size: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    color: rgb(255, 255, 255);
+    border: black solid 5px;
+    border-radius: 30px;
+}
+.col3{
+    background-color: rgb(247, 220, 185);
+    font-family: nexa;
+    font-size: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    color: rgb(99, 99, 99);
+    border: black solid 5px;
+    border-radius: 30px;
+}
+.col4{
+    background-color: rgb(181, 193, 142);
+    font-family: nexa;
+    font-size: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    color: rgb(255, 255, 255);
+    border: black solid 5px;
+    border-radius: 30px;
+}
+.container{
+display: flex;
+justify-content: center;
+font-family: nexa;
+flex-wrap: wrap;
+}
+.card{
+    background: rgb(247,152,8);
+background: linear-gradient(117deg, rgba(247,152,8,1) 0%, rgba(238,26,26,1) 100%);
+    width:200px;
+    height: 350px;
+    margin: 10px;
+    text-align: center;
+    border: black solid 5px;
+    border-radius: 5px;
+    
+}
+p{
+    color:black;
+}
+h2{
+    color: black;
+}
+.cardImg{
+    height: 150px;
+   
+    margin-bottom: 15px;
+    background-size: cover;
+}
+.ca1{
+background-image: url('giphyCat.webp');
+}
+.ca2{
+background-image: url('ducks.jpg');
+}
+.ca3{
+background-image: url('JavaScript-logo.png');
+background-position-y: -40px;
+background-position-x: -20px;
+
+}
+.contactMe{
+    display: flex;
+    justify-content: center;
+    font-family: nexa;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(99, 0, 0);
+    color: white;
+    font-size: 2rem;
+}
+p{
+color: white;
+}
+.thelink{
+    text-decoration: none;
+    color: rgb(255, 221, 0);
+    cursor: pointer;
+}
+
+@media (max-width:680px){
+   .grid-container{
+    width:100%;
+    display: block;
+    text-align: justify;
+    margin-bottom: 20px;
+    
+    
+   }
+   .container{
+    
+    width: 100%;
+    
+   
+   }
+   .col1{
+    margin: 10px;
+  
+   }
+   .col2{
+    margin: 10px;
+    
+   }
+   .col3{
+    margin: 10px;
+    
+   }
+   .col4{
+    margin: 10px;
+    
+   }
+
+
+
+}
+@media(min-width:700px) and (max-width:1200px){
+    .grid-container{
+        font-size: 1rem;
+        width:100%;
+        display: block;
+        text-align: justify;
+        margin-bottom: 20px;
+        
+        
+       }
+       .container{
+        
+        width: 100%;
+        
+       
+       }
+       .col1{
+        margin: 10px;
+      
+       }
+       .col2{
+        margin: 10px;
+        
+       }
+       .col3{
+        margin: 10px;
+        
+       }
+       .col4{
+        margin: 10px;
+        
+       }
+}
